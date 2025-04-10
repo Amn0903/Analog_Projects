@@ -11,8 +11,8 @@ This project involves the design and simulation of key analog building blocks-**
 - LTspice – Circuit simulation
 - Magic VLSI  – Layout design (for 180nm)
 - Technology: 180nm and 22nm CMOS
+
 ## Key Results
-## 📊 Key Results
 
 | Metric                    | 180nm             | 22nm              |
 |--------------------------|-------------------|-------------------|
@@ -20,3 +20,21 @@ This project involves the design and simulation of key analog building blocks-**
 | Power Dissipation        | 0.058 mW          | 0.025 mW          |
 | Unity Gain Bandwidth     | 30.22 MHz         | 210 MHz           |
 | Frequency Response       | Low-pass Filter   | Low-pass Filter   |
+## Layout Design (180nm only)
+
+Layouts for the following were created using Magic:
+- Cascode Current Mirror
+- Cascode Amplifier
+
+## Observations
+
+- **22nm** technology consumes **less power** and achieves **higher bandwidth**, owing to its smaller transistor size.
+- Layout complexity increases in 22nm due to tighter design rules and scale.
+- Both technologies meet all design specifications for gain, power, and bandwidth.
+
+## Conclusion
+
+This project successfully demonstrates the complete flow of analog circuit design:
+- Schematic → Simulation → Layout (for 180nm)
+- All simulation results closely match theoretical expectations.
+- Technology comparison highlights the advantages and trade-offs between 180nm and 22nm processes.
