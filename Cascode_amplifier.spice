@@ -1,0 +1,13 @@
+* SPICE3 file created from Cascode_amplifier.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 Vdd Vbias1 a_22_37# Vdd pfet w=14 l=2
++  ad=98 pd=42 as=238 ps=90
+M1001 a_22_37# Vbias2 Vout Vdd pfet w=14 l=2
++  ad=0 pd=0 as=112 ps=44
+M1002 a_n6_n68# Vin a_n6_n88# Gnd nfet w=68 l=2
++  ad=2176 pd=336 as=1224 ps=172
+M1003 Vout Vbias3 a_n6_n68# Gnd nfet w=68 l=2
++  ad=952 pd=164 as=0 ps=0
+C0 Vdd Gnd 5.98fF

@@ -1,0 +1,23 @@
+* Testbench for Beta Multiplier Current Mirror Circuit
+.INCLUDE "tsmc_spice_180nm.lib"    ; Include technology library
+.INCLUDE "current_mirror.spice"   ; Include the circuit definition
+
+* Power supply
+VDD vdd 0 1.8 ; change labels accordingly
+
+* Bias input voltage
+Vbiasp vbiasp 0 DC 1.2              ; Provide suitable DC voltage
+
+* Simulation control
+.TRAN 1n 10u                        ; Transient analysis for 10 microseconds with 1 ns step
+
+* Output variables to observe
+.control
+run
+plot vin                         ; Plot the input bias voltage
+plot vbias1                         ; Plot the output bias voltage 1
+plot vbias2                         ; Plot the output bias voltage 2
+plot vbias3                         ; Plot the output bias voltage 3
+plot vbias4                         ; Plot the output bias voltage 4
+.endc
+.end

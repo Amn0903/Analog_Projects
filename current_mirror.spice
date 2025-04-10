@@ -1,0 +1,29 @@
+* SPICE3 file created from current_mirror.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 vbias2 vbias3 a_55_n54# Gnd nfet w=20 l=4
++  ad=140 pd=54 as=260 ps=106
+M1001 vdd vbias1 a_101_3# vdd pfet w=48 l=4
++  ad=1824 pd=446 as=1056 ps=236
+M1002 a_55_n54# vbias4 gnd Gnd nfet w=20 l=4
++  ad=0 pd=0 as=430 ps=190
+M1003 a_n19_n12# vbias3 a_n6_n88# Gnd nfet w=20 l=4
++  ad=140 pd=54 as=260 ps=106
+M1004 vbias1 vbias3 a_130_n53# Gnd nfet w=20 l=4
++  ad=140 pd=54 as=260 ps=106
+M1005 vdd vin a_n19_n12# vdd pfet w=48 l=4
++  ad=0 pd=0 as=528 ps=118
+M1006 a_n6_n88# vbias4 gnd Gnd nfet w=20 l=4
++  ad=0 pd=0 as=0 ps=0
+M1007 a_130_n53# vbias4 gnd Gnd nfet w=20 l=4
++  ad=0 pd=0 as=0 ps=0
+M1008 a_101_3# vbias2 vbias1 vdd pfet w=48 l=4
++  ad=0 pd=0 as=528 ps=118
+M1009 vbias3 vbias3 gnd Gnd nfet w=10 l=4
++  ad=80 pd=36 as=0 ps=0
+M1010 vdd vbias2 vbias2 vdd pfet w=40 l=10
++  ad=0 pd=0 as=440 ps=102
+M1011 vdd vin vbias3 vdd pfet w=48 l=4
++  ad=0 pd=0 as=528 ps=118
+C0 vdd Gnd 28.52fF
